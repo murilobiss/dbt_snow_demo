@@ -8,18 +8,20 @@ Este projeto é uma demonstração de como usar o [dbt (data build tool)](https:
 
 O projeto segue a estrutura recomendada pelo dbt e contém os seguintes diretórios e arquivos:
 
-dbt_snow_demo/ ├── analyses # Análises SQL não incluídas em modelos 
-├── data_sources # Fonte de dados utilizadas 
-├── dbt_project.yml # Configurações do projeto dbt 
-├── macros # Macros personalizadas do dbt 
-├── models # Modelos dbt (tabelas e views) │ 
-├── staging # Modelos de staging │ 
-├── marts # Modelos de dados finais 
-   └── intermediate # Modelos intermediários
-├── seeds # Dados de entrada em formato CSV 
-├── snapshots # Snapshots para capturar o estado dos dados 
-├── tests # Testes para validar modelos 
-   └── profiles.yml # Configurações do perfil de conexão
+
+dbt_snow_demo/
+├── analyses/            # Análises SQL não incluídas em modelos 
+├── data_sources/        # Fonte de dados utilizadas 
+├── dbt_project.yml      # Configurações do projeto dbt 
+├── macros/              # Macros personalizadas do dbt 
+├── models/              # Modelos dbt (tabelas e views) 
+│   ├── staging/         # Modelos de staging 
+│   ├── marts/           # Modelos de dados finais 
+│   └── intermediate/     # Modelos intermediários
+├── seeds/               # Dados de entrada em formato CSV 
+├── snapshots/           # Snapshots para capturar o estado dos dados 
+├── tests/               # Testes para validar modelos 
+└── profiles.yml         # Configurações do perfil de conexão
 
 
 ## Requisitos
