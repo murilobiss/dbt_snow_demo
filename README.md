@@ -8,7 +8,18 @@ Este projeto é uma demonstração de como usar o [dbt (data build tool)](https:
 
 O projeto segue a estrutura recomendada pelo dbt e contém os seguintes diretórios e arquivos:
 
-dbt_snow_demo/ ├── analyses # Análises SQL não incluídas em modelos ├── data_sources # Fonte de dados utilizadas ├── dbt_project.yml # Configurações do projeto dbt ├── macros # Macros personalizadas do dbt ├── models # Modelos dbt (tabelas e views) │ ├── staging # Modelos de staging │ ├── marts # Modelos de dados finais │ └── intermediate # Modelos intermediários ├── seeds # Dados de entrada em formato CSV ├── snapshots # Snapshots para capturar o estado dos dados ├── tests # Testes para validar modelos └── profiles.yml # Configurações do perfil de conexão
+dbt_snow_demo/ ├── analyses # Análises SQL não incluídas em modelos 
+├── data_sources # Fonte de dados utilizadas 
+├── dbt_project.yml # Configurações do projeto dbt 
+├── macros # Macros personalizadas do dbt 
+├── models # Modelos dbt (tabelas e views) │ 
+├── staging # Modelos de staging │ 
+├── marts # Modelos de dados finais 
+   └── intermediate # Modelos intermediários
+├── seeds # Dados de entrada em formato CSV 
+├── snapshots # Snapshots para capturar o estado dos dados 
+├── tests # Testes para validar modelos 
+   └── profiles.yml # Configurações do perfil de conexão
 
 
 ## Requisitos
@@ -25,12 +36,3 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados:
 
    ```bash
    git clone https://github.com/murilobiss/dbt_snow_demo.git
-   cd dbt_snow_demo
-
-
-### Notas Finais:
-- Certifique-se de substituir os campos como `your_profile_name`, `your_account`, `your_username`, `your_password`, `your_role`, `your_database`, `your_warehouse` e `your_schema` com informações reais relevantes ao seu ambiente.
-- Adicione qualquer outra informação específica do projeto, como detalhes sobre os modelos, fontes de dados ou como executar análises específicas, conforme necessário.
-- Você pode também incluir uma seção sobre **exemplos de consultas**, se isso for relevante para o projeto. 
-
-Sinta-se à vontade para ajustar o conteúdo para melhor refletir o seu estilo e os detalhes do seu projeto!
